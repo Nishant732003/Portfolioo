@@ -14,14 +14,14 @@ const Body = styled.div`
 
 function ProjectCard() {
   const [openModal, setOpenModal] = useState({ state: false, project: null });
-  console.log(openModal);
+  // console.log(openModal);
   return (
     <>
       <ThemeProvider theme={darkTheme}>
         <Body>
           <Projects openModal={openModal} setOpenModal={setOpenModal} />
 
-          {openModal.state && (
+          {openModal?.state && (
             <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
           )}
         </Body>

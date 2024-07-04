@@ -49,7 +49,7 @@ const Projects = ({ openModal, setOpenModal }) => {
 
         <CardContainer>
           {projects
-            .filter((project) => project.category === toggle)
+            .filter((project) => project?.category === toggle)
             .map((project, index) => (
               <ProjectCard
                 key={index}

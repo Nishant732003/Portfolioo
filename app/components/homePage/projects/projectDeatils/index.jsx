@@ -207,17 +207,17 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
           />
           <Image src={project?.image} alt="Not Loaded" />
           <Title>{project?.title}</Title>
-          <Date>{project.date}</Date>
+          <Date>{project?.date}</Date>
           <Tags>
             {project?.tags.map((tag, index) => (
               <Tag key={index}>{tag}</Tag>
             ))}
           </Tags>
           <Desc>{project?.description}</Desc>
-          {project.member && (
-            <>
-              <Label>Members</Label>
-              <Members>
+          {/* {project.member && (
+            <> */}
+              {/* <Label>Members</Label> */}
+              {/* <Members>
                 {project?.member.map((member, index) => (
                   <Member key={index}>
                     <MemberImage src={member.img} />
@@ -238,9 +238,9 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
                     </a>
                   </Member>
                 ))}
-              </Members>
-            </>
-          )}
+              </Members> */}
+            {/* </>
+          )} */}
           <ButtonGroup>
             <Button dull href={project?.github} target="new">
               View Code
