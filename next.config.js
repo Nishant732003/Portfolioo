@@ -16,12 +16,7 @@ const nextConfig = {
       "@components": path.join(__dirname, "components"),
       "@utils": path.join(__dirname, "utils"),
     };
-     config.resolve.extensions = [
-       ".js",
-       ".jsx",
-       ".json",
-       ...config.resolve.extensions,
-     ];
+    
     return config;
   },
 };
