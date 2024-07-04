@@ -1,5 +1,5 @@
 "use client";
-
+// @flow strict
 import Lottie from "lottie-react";
 
 const AnimationLottie = ({ animationPath, width }) => {

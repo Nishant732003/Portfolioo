@@ -1,4 +1,5 @@
 "use client";
+// @flow strict
 import { useEffect } from "react";
 
 const GlowCard = ({ children, identifier }) => {

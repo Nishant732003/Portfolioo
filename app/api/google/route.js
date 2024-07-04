@@ -1,3 +1,5 @@
+"use client";
+// @flow strict
 import axios from "axios";
 import { NextResponse } from "next/server";
 

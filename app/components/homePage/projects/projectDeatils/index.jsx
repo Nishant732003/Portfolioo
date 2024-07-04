@@ -1,5 +1,5 @@
-"use client"
-
+"use client";
+// @flow strict
 
 import { FaTimesCircle } from "react-icons/fa";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
@@ -207,7 +207,7 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
           <Title>{project?.title}</Title>
           <Date>{project.date}</Date>
           <Tags>
-            {project?.tags.map((tag,index) => (
+            {project?.tags.map((tag, index) => (
               <Tag key={index}>{tag}</Tag>
             ))}
           </Tags>
@@ -216,7 +216,7 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
             <>
               <Label>Members</Label>
               <Members>
-                {project?.member.map((member,index) => (
+                {project?.member.map((member, index) => (
                   <Member key={index}>
                     <MemberImage src={member.img} />
                     <MemberName>{member.name}</MemberName>
