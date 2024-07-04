@@ -1,6 +1,6 @@
 "use client";
 // @flow strict
-import { personalData } from "@/utils/data/personal-data";
+import { personalData } from "../../../../utils/data/personal-data";
 import Link from "next/link";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { CiLocationOn } from "react-icons/ci";

@@ -70,6 +70,7 @@ const Desc = styled.div`
 
 const Image = styled.img`
   width: 100%;
+  height:100%,
   object-fit: cover;
   border-radius: 12px;
   margin-top: 30px;
@@ -143,6 +144,7 @@ const MemberName = styled.div`
   font-size: 16px;
   font-weight: 500;
   width: 200px;
+  height:auto;
   color: ${({ theme }) => theme.text_primary};
   @media only screen and (max-width: 600px) {
     font-size: 14px;
