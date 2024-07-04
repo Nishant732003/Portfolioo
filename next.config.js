@@ -5,9 +5,25 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-export default {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },
-  
+  webpack: (config) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      "@components": path.join(__dirname, "components"),
+      "@utils": path.join(__dirname, "utils"),
+    };
+     config.resolve.extensions = [
+       ".js",
+       ".jsx",
+       ".json",
+       ...config.resolve.extensions,
+     ];
+    return config;
+  },
 };
+
+export default nextConfig;

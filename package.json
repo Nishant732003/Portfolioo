@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "npm clean-install",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
