@@ -2,7 +2,7 @@
 // @flow strict
 
 import { FaTimesCircle } from "react-icons/fa";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
+// import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { Modal } from "@mui/material";
 import React from "react";
 

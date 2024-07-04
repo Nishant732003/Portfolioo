@@ -1,6 +1,6 @@
 "use client";
 
-
+// @flow strict
 import { useState } from "react";
 import {
   Container,

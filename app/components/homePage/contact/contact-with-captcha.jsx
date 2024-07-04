@@ -6,7 +6,8 @@ import ReCAPTCHA from "react-google-recaptcha";
 import { TbMailForward } from "react-icons/tb";
 import { toast } from "react-toastify";
 import axios from "axios";
-import { isValidEmail } from "../../../../utils/check-email";
+import { isValidEmail } from "@utils/check-email";
+
 
 function ContactWithCaptcha() {
   const [input, setInput] = useState({
