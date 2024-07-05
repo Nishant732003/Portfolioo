@@ -1,3 +1,4 @@
+"use client";
 // @flow strict
 import Image from "next/image";
 
@@ -5,7 +6,6 @@ import { educations } from "@utils/data/educations";
 import { BsPersonWorkspace } from "react-icons/bs";
 import AnimationLottie from "@components/helper/animation-lottie";
 import GlowCard from "@components/helper/glow-card";
-
 
 import lottieFile from "../../../../public/lottie/study.json";
 
@@ -77,9 +77,7 @@ function Education() {
                         <p className="text-sm sm:text-base">
                           {education.institution}
                         </p>
-                        <p className="text-sm sm:text-base">
-                          {education.CGPA}
-                        </p>
+                        <p className="text-sm sm:text-base">{education.CGPA}</p>
                       </div>
                     </div>
                   </div>

@@ -1,5 +1,5 @@
 
-
+"use client";
 // @flow strict
 import React from "react";
 
@@ -109,20 +109,20 @@ const Description = styled.div`
   text-overflow: ellipsis;
 `;
 
-const Members = styled.div`
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
-`;
-const Avatar = styled.img`
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  margin-left: -10px;
-  background-color: ${({ theme }) => theme.white};
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  border: 3px solid ${({ theme }) => theme.card};
-`;
+// const Members = styled.div`
+//   display: flex;
+//   align-items: center;
+//   padding-left: 10px;
+// `;
+// const Avatar = styled.img`
+//   width: 38px;
+//   height: 38px;
+//   border-radius: 50%;
+//   margin-left: -10px;
+//   background-color: ${({ theme }) => theme.white};
+//   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+//   border: 3px solid ${({ theme }) => theme.card};
+// `;
 
 const ProjectCards = ({ project, setOpenModal }) => {
   return (
@@ -138,11 +138,11 @@ const ProjectCards = ({ project, setOpenModal }) => {
         <Date>{project.date}</Date>
         <Description>{project.description}</Description>
       </Details>
-      <Members>
+      {/* <Members>
         {project.member?.map((member,index) => (
           <Avatar key={index} src={member.img} />
         ))}
-      </Members>
+      </Members> */}
       <Button>View Project</Button>
     </Card>
   );

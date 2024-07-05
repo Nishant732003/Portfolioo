@@ -1,4 +1,6 @@
 
+// @flow strict
+
 import AboutSection from "@components/homepage/about/index";
 import ContactSection from "@components/homepage/contact/index";
 import Education from "@components/homepage/education/index";

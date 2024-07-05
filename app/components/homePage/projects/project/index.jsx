@@ -11,7 +11,7 @@ import {
   Divider,
 } from "./ProjectStyles";
 import ProjectCard from "../cards/ProjectCard";
-import { projects } from "../../../../../utils/data/projects-data";
+import { projects } from "@utils/data/projects-data";
 
 const Projects = ({ openModal, setOpenModal }) => {
   const [toggle, setToggle] = useState("Frontend");

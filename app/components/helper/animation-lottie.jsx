@@ -1,4 +1,4 @@
-"use client";
+
 // @flow strict
 import Lottie from "lottie-react";
 
