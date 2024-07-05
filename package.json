@@ -19,19 +19,23 @@
     "axios": "^1.6.8",
     "lottie-react": "^2.4.0",
     "next": "^14.1.3",
+    "postcss-loader": "^8.1.1",
     "react": "latest",
     "react-dom": "latest",
     "react-fast-marquee": "^1.6.2",
     "react-google-recaptcha": "^3.1.0",
     "react-icons": "^4.11.0",
     "react-toastify": "^10.0.4",
-    "styled-components": "^6.1.11"
+    "styled-components": "^6.1.11",
+    "tailwindcss": "^3.4.4"
   },
   "devDependencies": {
     "autoprefixer": "latest",
+   
     "eslint": "latest",
     "eslint-config-next": "latest",
-    "postcss": "latest"
+    "postcss": "latest",
+    "sass": "^1.77.6"
    
   }
 }
